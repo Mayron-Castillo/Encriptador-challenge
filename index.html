@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador One</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Logo/icon2.svg">
+    </head>
+
+    <body>
+        <header>
+            <div class="box"> 
+                <h1><img id="logo" src="imagenes/Logo.png"></h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="mensaje"> 
+                <div class="mensajeContenedor"> 
+                    <div class="ingresoTexto"> 
+                        <textarea name="space" cols="10" rows="8" class="mensajeEncriptar" id="mensajeEncriptar" required placeholder ="Ingrese el texto aqui" spellcheck="false" onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32)"></textarea>
+                    </div>
+    
+                    <div class="aviso"> 
+                        <p><img class="signoExclamacion" src="imagenes/signo.png"> Solo letras minúsculas y sin acentos</p>
+                    </div>
+    
+                    <div class="botones" > 
+                        <button onclick="btnEncriptar()"  class="botonEncriptar">Encriptar</button>
+                        <button onclick="btnDesencriptar()" class="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="resultado"> 
+                <div class="containerResultado" id="containerResultado"> 
+                    <div class="resultadoMensaje" id="resultadoMensaje"> 
+                        <img class="imagen" src="imagenes/Muneco.png">
+                        <h1 class="ningunMensaje">Ningún mensaje fue encontrado</h1> 
+                        <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p> <!-- class info_text -->
+                    </div>
+                    <div class="elementosResultados"> <!-- class output_elements -->
+                        <p class="finalResultado" id="resultadoFinal"></p> <!-- class output_text y id out_text -->
+                        <button onclick="copiar();" id="btnCopiar" class="btnCopiar" hidden>Copiar</button> <!-- class y id copy_button -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/mayron-castillo-697396275/" target="_blank" rel="noopener noreferrer"><img class="in" src="imagenes/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/Mayron-Castillo" target="_blank" rel="noopener noreferrer"><img class="gh" src="imagenes/github.png" alt="Github"></a>
+            <p class="copyright">&copy; Copyright Mayron Castillo - 2023</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
+</html>

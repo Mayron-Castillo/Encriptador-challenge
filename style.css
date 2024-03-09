@@ -1,0 +1,301 @@
+body{
+    font-weight: 400;
+    font-style: normal;
+    background-size: contain; 
+    background-color: #F3F5FC;
+}
+
+header{
+    width: 69%;
+}
+
+#logo{
+    width: 120px;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+}
+
+.mensaje{
+    display: inline-block;
+    width: 69%;
+}
+
+.mensajeEncriptar{
+    background-color: #F3F5FC;
+    font-weight: 400;
+    font-style: normal;
+    width: 68%; /*1440 x 1024  68%*/  /*checkar el 68% porque el tamaño de pantalla es diferente*/
+    margin-left: 18.12%;
+    margin-bottom: 8.8%; 
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871; 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform:lowercase;
+    resize: none;
+}
+
+::placeholder{
+    color: #0A3871;
+    text-transform: none;
+}
+
+.aviso p{ 
+    font-size: 20px;
+    text-indent: 23%;    
+    padding: 10px;
+    opacity: 80%;
+}
+
+.signoExclamacion{
+    vertical-align: bottom;
+    width: 18px;
+    transition: 0.42s;
+}
+
+.botones{
+    display:flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.botonEncriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.botonEncriptar:hover{
+    font-size: 17px;
+    transform: scale(1.05);
+}
+
+.botonEncriptar:active{
+    background-color: #25456d;
+}
+
+.botonEncriptar, .botonDesencriptar{
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 16px;
+    width: 26%;
+    line-height: 19.36px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid;
+    transition: 0.2s all;
+    cursor:pointer;
+    text-align: center;
+}
+
+.botonDesencriptar{
+    color: #0A3871;
+}
+
+.botonDesencriptar:hover{
+    font-size: 17px;
+    transform: scale(1.05);
+}
+
+.botonDesencriptar:active{
+    background-color: #dfd9e4;
+}
+
+.resultado{
+    position: relative;
+    float: right;
+    width: 30%;
+}
+
+.containerResultado{
+    display:inline-block;
+    position: absolute;
+    top: -120px;
+    height: 850px; 
+    width: 450px;
+    background-color: #ffffff9c;
+    margin-left: 50px;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    transition: 0.2s all;
+}
+
+.containerResultado:hover{
+    box-shadow: 0 24px 32px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.imagen{
+    width: 340px;
+}
+
+.resultadoMensaje{
+    position: relative;
+    top: 250px;
+    text-align: center;  
+}
+
+.ningunMensaje{
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.texto{
+    line-height: 24px;
+    color: #495057;
+}
+
+.finalResultado{
+    word-wrap: break-word;
+    max-height: 690px;
+    width: 400px;
+    line-height: 36px;
+    font-size: 28px;
+    color: #0A3871; 
+    margin: 40px auto;
+    padding: 1px 15px 0px 15px;
+    text-align: left;
+    overflow: auto;
+}
+
+.btnCopiar{
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    bottom: 50px;
+    left: 166px;
+    font-size: 16px;
+    width: 26%;
+    line-height: 19.36px;
+    padding: 14px;
+    border-radius: 24px;
+    border: 1px solid;
+    transition: 0.2s all;
+    cursor:pointer;
+}
+
+.btnCopiar:hover{
+    font-size: 16px;
+    transform: scale(1.05);
+}
+
+.in, .gh{
+    border-radius: 10%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.in:hover{
+    font-size: 16px;
+    transform: scale(1.05);
+}
+
+.gh:hover{
+    font-size: 16px;
+    transform: scale(1.05);
+}
+
+footer{ /*Ponemos el footer acomodado abajo de la página*/
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position:fixed; 
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    padding: 30px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:710px){
+    
+    .mensaje{
+        width: 100%;
+    }
+
+    .mensajeEncriptar{
+        width: 90%;
+        height: 260px;
+        margin-left: 0;
+        margin-bottom: 0; 
+    }
+
+    ::placeholder{
+        text-align: center;
+    }
+
+    .info p{ 
+        text-align: center;
+        padding: 10px;
+        opacity: 80%;
+        text-indent: 0%;
+    }
+
+    .aviso p{
+        text-indent: 0%;
+    }
+
+    .mensaje{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 45%;
+    }
+
+    .resultado{
+        position: relative;
+        width: auto;
+        float: none;
+        padding: 10px;
+    }
+
+    .containerResultado{
+        display:block;
+        position: initial;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .imagen{
+        width: 40%;
+    }
+
+    .resultadoMensaje{
+        position: initial;
+        top: 250px;
+        text-align: center; 
+    }
+
+    .finalResultado{
+        width: 90%;
+        font-size: 28px;
+        margin: 20px 0;
+        padding: 10px 15px 0px 15px;
+        max-height: 290px;
+        overflow-y: scroll;
+    }
+
+    .btnCopiar{
+        width: 35%;
+        position: initial;
+        margin: 1.5% 35%;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+}
